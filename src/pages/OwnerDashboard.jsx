@@ -7,8 +7,8 @@ import api from "../api";
 ------------------------------------------------------------------- */
 const ownerapi = () => {
   const token = localStorage.getItem("token");
-  return api.create({
-    baseURL: "/api/owner",
+  return axios.create({
+    baseURL: `${import.meta.env.VITE_API_URL}/api/owner`,
     headers: token ? { Authorization: `Bearer ${token}` } : {},
   });
 };
@@ -272,7 +272,7 @@ function MyProps() {
             </div>
             <button
               onClick={async () => {
-                await api().delete(`/properties/${p._id}`);
+                await ownerapi().delete(`/properties/${p._id}`);
                 fetchList();
               }}
               className="text-red-600 hover:underline"
