@@ -1,6 +1,7 @@
 // src/pages/HomePage.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import heroImage from "../assets/image.png";
 
 const features = [
   {
@@ -56,7 +57,7 @@ function HomePage() {
             {/* Left: Text */}
             <div className="w-full md:w-1/2 text-center md:text-left">
               <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
-                Househunt
+                Stay Finder
               </h1>
               <p className="mt-4 text-lg md:text-xl font-light">
                 Find your next rental home in seconds – no middle-men, no hassle.
@@ -73,7 +74,7 @@ function HomePage() {
             {/* Right: Image */}
             <div className="w-full md:w-1/2 flex justify-center md:justify-end">
               <img
-                src="/src/assets/image2.png"
+                src={heroImage}
                 alt="Modern houses"
                 className="rounded-2xl shadow-lg w-full max-w-md object-cover"
               />
@@ -85,7 +86,7 @@ function HomePage() {
       {/* Features Section */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold text-center mb-12">
-          Why&nbsp;Househunt?
+          Why&nbsp;Stay Finder?
         </h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map(({ title, description }) => (
