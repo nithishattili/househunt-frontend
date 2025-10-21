@@ -130,7 +130,7 @@ function Navbar() {
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo / brand */}
         <Link to="/" className="text-xl font-bold text-indigo-600">
-          HouseHunt
+          Stay Finder
         </Link>
 
         {/* Desktop links */}
