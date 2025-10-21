@@ -1,7 +1,7 @@
 // src/pages/HomePage.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImage from "../assets/image.png";
+import heroImage from "../assets/image2.png";
 
 const features = [
   {
