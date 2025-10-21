@@ -49,21 +49,36 @@ const steps = [
 function HomePage() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
-      {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-indigo-600 to-cyan-500 text-white py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
-            Househunt
-          </h1>
-          <p className="mt-4 text-lg md:text-xl font-light">
-            Find your next rental home in seconds – no middle‑men, no hassle.
-          </p>
-          <Link
-            to="/properties"
-            className="inline-block mt-8 rounded-full bg-white/90 px-8 py-3 text-base font-semibold text-indigo-700 shadow-md transition hover:bg-white"
-          >
-            Browse Listings
-          </Link>
+      {/* Hero Section: two-column layout (text left, image right) */}
+      <section className="w-full bg-gradient-to-r from-indigo-600 to-cyan-500 text-white py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            {/* Left: Text */}
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
+                Househunt
+              </h1>
+              <p className="mt-4 text-lg md:text-xl font-light">
+                Find your next rental home in seconds – no middle-men, no hassle.
+              </p>
+
+              <Link
+                to="/properties"
+                className="inline-block mt-8 rounded-full bg-white/90 px-8 py-3 text-base font-semibold text-indigo-700 shadow-md transition hover:bg-white"
+              >
+                Browse Listings
+              </Link>
+            </div>
+
+            {/* Right: Image */}
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+              <img
+                src="/src/assets/image2.png"
+                alt="Modern houses"
+                className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
