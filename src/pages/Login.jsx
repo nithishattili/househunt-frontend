@@ -35,7 +35,7 @@ function Login() {
     <main className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8 sm:p-10">
         <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">
-          Sign in to <span className="text-indigo-600">Househunt</span>
+          Sign in to <span className="text-indigo-600">Stay Finder</span>
         </h2>
 
         {error && (
